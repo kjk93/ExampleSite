@@ -1,0 +1,164 @@
+body {
+  margin: 0;
+  font-family: 'Quicksand', sans-serif; }
+
+.filler-1 {
+  flex: 1; }
+
+.filler-2 {
+  flex: 2; }
+
+.headerContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 -.6rem 2rem 0;
+  padding: 0 2rem;
+  margin-bottom: 2rem; }
+  .headerContainer .logo {
+    font-size: 3.5rem;
+    font-style: italic;
+    letter-spacing: -0.7rem; }
+  .headerContainer .title {
+    font-size: 4rem; }
+  .headerContainer .menu i {
+    font-size: 2.5rem; }
+
+.pitchContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: center;
+  padding: 0 3rem; }
+  .pitchContainer .formationsContainer {
+    flex: 2;
+    display: flex;
+    flex-direction: column; }
+  .pitchContainer .editPitch {
+    display: flex;
+    flex-direction: row; }
+  .pitchContainer .formationTypes {
+    display: flex;
+    flex-direction: column; }
+  .pitchContainer .formationTypeTab {
+    cursor: pointer;
+    padding: 5vh .5rem;
+    margin: .1rem 0;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    text-align: center;
+    font-weight: bolder;
+    background-color: rgba(139, 195, 74, 0.7);
+    box-shadow: 0 .1rem .1rem; }
+    .pitchContainer .formationTypeTab:hover {
+      background-color: #8bc34a; }
+    .pitchContainer .formationTypeTab.active {
+      background-color: #8bc34a; }
+    .pitchContainer .formationTypeTab:nth-child(2) {
+      background-color: rgba(255, 235, 59, 0.7); }
+      .pitchContainer .formationTypeTab:nth-child(2):hover {
+        background-color: #ffeb3b; }
+      .pitchContainer .formationTypeTab:nth-child(2).active {
+        background-color: #ffeb3b; }
+    .pitchContainer .formationTypeTab:nth-child(3) {
+      background-color: rgba(244, 67, 54, 0.7); }
+      .pitchContainer .formationTypeTab:nth-child(3):hover {
+        background-color: #f44336; }
+      .pitchContainer .formationTypeTab:nth-child(3).active {
+        background-color: #f44336; }
+    .pitchContainer .formationTypeTab:nth-child(4) {
+      background-color: rgba(156, 39, 176, 0.7); }
+      .pitchContainer .formationTypeTab:nth-child(4):hover {
+        background-color: #9c27b0; }
+      .pitchContainer .formationTypeTab:nth-child(4).active {
+        background-color: #9c27b0; }
+  .pitchContainer .formations {
+    display: flex;
+    flex-direction: column;
+    padding: 0 2rem;
+    min-height: 65vh;
+    font-size: 2rem;
+    border: solid 1px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px; }
+    .pitchContainer .formations .formationButton {
+      margin: 1rem 0; }
+  .pitchContainer .pitch {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    flex-grow: 2;
+    background-color: #8bc34a; }
+  .pitchContainer .pitchArea {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+  .pitchContainer .goal {
+    flex: 3;
+    background-color: transparent;
+    border: solid 1rem white; }
+  .pitchContainer .centerLine .line {
+    background-color: white; }
+  .pitchContainer .matchContainer {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    border: solid 1px; }
+    .pitchContainer .matchContainer .title {
+      flex-grow: 1;
+      font-size: 3rem;
+      align-self: center; }
+  .pitchContainer .scoringSummary {
+    flex-grow: 2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    padding: 0 1rem 3rem 1rem; }
+  .pitchContainer .scoringCol {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-weight: 500; }
+  .pitchContainer .attributesHeader {
+    flex: 2;
+    font-weight: 900; }
+  .pitchContainer .header {
+    font-size: 2rem; }
+  .pitchContainer .scoringRow {
+    font-weight: bold;
+    border-radius: 1em;
+    background-color: rgba(244, 67, 54, 0.7); }
+    .pitchContainer .scoringRow.winning {
+      background-color: rgba(139, 195, 74, 0.7); }
+    .pitchContainer .scoringRow.tie {
+      background-color: rgba(255, 235, 59, 0.7); }
+
+.belowPitch {
+  display: flex;
+  flex-direction: row; }
+  .belowPitch .lineUpDirective {
+    flex: 1; }
+
+.lineUpContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch; }
+  .lineUpContainer .title {
+    align-self: center; }
+  .lineUpContainer .lineUpTable {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+  .lineUpContainer .lineUpCol {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; }
+    .lineUpContainer .lineUpCol .points {
+      align-self: flex-end; }

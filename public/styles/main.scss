@@ -1,0 +1,25 @@
+$light-green: rgba(139, 195, 74, .7);
+$green: rgba(139, 195, 74, 1);
+$light-yellow: rgba(255, 235, 59 , .7);
+$yellow: rgba(255, 235, 59 , 1);
+$light-red: rgba(244, 67, 54 , .7);
+$red: rgba(244, 67, 54 , 1);
+$light-purple: rgba(156, 39, 176, .7);
+$purple: rgba(156, 39, 176, 1);
+
+body{
+	margin: 0;
+	font-family: 'Quicksand', sans-serif;
+}
+
+.filler-1{
+	flex: 1;
+}
+
+.filler-2{
+	flex: 2;
+}
+
+@import "../app/header/styles/styles";
+@import "../app/pitch/styles/styles";
+@import "../app/common/styles/styles";

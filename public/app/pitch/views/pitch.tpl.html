@@ -1,0 +1,66 @@
+<div class="pitchContainer">
+	<span class="formationsContainer">
+		<div class="editPitch">
+			<span class="formationTypes">
+				<div ng-repeat="type in pitch.formationTypes" class="formationTypeTab" ng-class="{'active': type === pitch.activeFormationType}" ng-click="pitch.setActiveFormationType(type)">{{type}}</div>
+			</span>
+			<span class="formations">
+				<div class="title">{{pitch.activeFormationType}} Formations</div>
+				<button ng-repeat="formation in pitch.formations[pitch.activeFormationType]" class="btn btn-default formationButton">{{formation}}</button>
+			</span>
+			<span class="pitch">
+				<div class="pitchArea topGoal">
+					<span class="filler-2"></span>
+					<span class="goal goalTop"></span>
+					<span class="filler-2"></span>
+				</div>
+				<div class="centerLine">
+					testing
+					<div class="line"></div>
+					<div class="circle"></div>
+					<div class="dot"></div>
+				</div>
+				<div class="pitchArea bottomGoal">
+					<span class="filler-2"></span>
+					<span class="goal goalbottom"></span>
+					<span class="filler-2"></span>
+				</div>
+			</span>
+		</div>
+	</span>
+	<span class="matchContainer">
+		<div class="title">Current Match</div>
+		<div class="scoringSummary">
+			<span ng-repeat="header in pitch.matchHeaders" class="scoringCol {{header}}Header">
+				<div ng-if="header!=='attributes'" ng-class="{'attr': header==='attributes', 'userName': header!=='attributes'}" class="header">{{pitch[header].name.toUpperCase()}}</div>
+				<div ng-if="header==='attributes'" ng-class="{'attr': header==='attributes', 'userName': header!=='attributes'}" class="header">{{header.toUpperCase()}}</div>
+				<div ng-if="header==='user'" ng-repeat="area in pitch.attributes" ng-class="{'winning': pitch.user.scores[area] > pitch.opp.scores[area], 'tie': pitch.user.scores[area] === pitch.opp.scores[area]}" class="scoringRow {{header}}Row">
+					{{pitch.user.scores[area]}}
+				</div>
+				<div ng-if="header==='attributes'" ng-repeat="area in pitch.attributes" class=" {{header}}Row">
+					{{area.toUpperCase()}}
+				</div>
+				<div ng-if="header==='opp'" ng-repeat="area in pitch.attributes" ng-class="{'winning': pitch.user.scores[area] < pitch.opp.scores[area], 'tie': pitch.user.scores[area] === pitch.opp.scores[area]}" class="scoringRow {{header}}Row">
+					{{pitch.opp.scores[area]}}
+				</div>
+			</span>
+			<!--<div class="players">
+				<span class="player userPlayer">{{pitch.user.name}}</span>
+				<span class="attribute">Attributes</span>
+				<span class="player oppPlayer">{{pitch.opp.name}}</span>
+			</div>
+			<div class="scores">
+				<div ng-repeat="area in pitch.scoringAreas" class="scoreRow">
+					<div ng-class="{'winning': pitch.user.scores[area] > pitch.opp.scores[area], 'tie': pitch.user.scores[area] === pitch.opp.scores[area]}" class="score userScore">{{pitch.user.scores[area]}}</div>
+					<div class="scoreArea">{{area.toUpperCase()}}</div>
+					<div ng-class="{'winning': pitch.user.scores[area] < pitch.opp.scores[area], 'tie': pitch.user.scores[area] === pitch.opp.scores[area]}" class="score oppScore">{{pitch.opp.scores[area]}}</div>
+				</div>
+			</div>-->
+		</div>
+	</span>
+</div>
+<div class="belowPitch">
+	<div class="filler-1"></div>
+	<line-up team="pitch.user.team" class="lineUpDirective"></line-up>
+	<div class="filler-1"></div>
+</div>

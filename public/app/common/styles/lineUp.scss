@@ -1,0 +1,25 @@
+.lineUpContainer{
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+
+	.title{
+		align-self: center;
+	}
+
+	.lineUpTable{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.lineUpCol{
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+
+		.points{
+			align-self: flex-end;
+		}
+	}
+}

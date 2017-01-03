@@ -1,0 +1,10 @@
+<div class="lineUpContainer">
+	<div class="title">Current Lineup</div>
+	<div class="lineUpTable">
+		<div ng-repeat="header in lineUp.headers" class="lineUpCol">
+			<div class="header">{{header.toUpperCase()}}</div>
+			<div ng-if="header === 'player'" ng-repeat="name in lineUp.playerNames" class="values">{{name}}</div>
+			<div ng-if="header !== 'player'" ng-repeat="player in lineUp.team" class="values {{header}}">{{player[header]}}</div>
+		</div>
+	</div>
+</div>

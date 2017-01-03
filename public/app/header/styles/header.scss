@@ -1,0 +1,25 @@
+.headerContainer{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	box-shadow:  0 -.6rem 2rem 0;
+	padding: 0 2rem;
+	margin-bottom: 2rem;
+
+	.logo{
+		font-size: 3.5rem;
+    font-style: italic;
+    letter-spacing: -0.7rem;
+	}
+
+	.title{
+		font-size: 4rem;
+	}
+
+	.menu{
+		i{
+			font-size: 2.5rem;
+		}
+	}
+}
