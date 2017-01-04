@@ -175,8 +175,13 @@
 .belowPitch{
 	display: flex;
 	flex-direction: row;
+	padding: 2rem 3rem;
 
 	.lineUpDirective{
+		flex: 2;
+	}
+
+	ad{
 		flex: 1;
 	}
 }

@@ -8,6 +8,11 @@ body {
 .filler-2 {
   flex: 2; }
 
+ad {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+
 .headerContainer {
   display: flex;
   flex-direction: row;
@@ -142,8 +147,11 @@ body {
 
 .belowPitch {
   display: flex;
-  flex-direction: row; }
+  flex-direction: row;
+  padding: 2rem 3rem; }
   .belowPitch .lineUpDirective {
+    flex: 2; }
+  .belowPitch ad {
     flex: 1; }
 
 .lineUpContainer {
@@ -151,7 +159,9 @@ body {
   flex-direction: column;
   align-items: stretch; }
   .lineUpContainer .title {
-    align-self: center; }
+    align-self: center;
+    font-size: 3rem;
+    font-weight: bold; }
   .lineUpContainer .lineUpTable {
     display: flex;
     flex-direction: row;
@@ -159,6 +169,19 @@ body {
   .lineUpContainer .lineUpCol {
     display: flex;
     flex-direction: column;
-    align-items: flex-start; }
-    .lineUpContainer .lineUpCol .points {
-      align-self: flex-end; }
+    align-items: flex-start;
+    width: 100%; }
+    .lineUpContainer .lineUpCol .header {
+      font-weight: 600; }
+    .lineUpContainer .lineUpCol:nth-last-child(1) {
+      align-items: stretch;
+      width: initial;
+      text-align: right; }
+  .lineUpContainer .values {
+    width: inherit;
+    padding: .5rem 0;
+    border-bottom: solid 1px rgba(0, 0, 0, 0.33); }
+    .lineUpContainer .values:nth-child(2n + 1) {
+      background-color: rgba(200, 200, 200, 0.25); }
+    .lineUpContainer .values:nth-child(2n) {
+      background-color: rgba(255, 255, 255, 0.7); }

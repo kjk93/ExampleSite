@@ -6,6 +6,9 @@ $light-red: rgba(244, 67, 54 , .7);
 $red: rgba(244, 67, 54 , 1);
 $light-purple: rgba(156, 39, 176, .7);
 $purple: rgba(156, 39, 176, 1);
+$table-row-even: rgba(255, 255, 255, .7);
+$table-row-odd: rgba(200, 200, 200, .25);
+$table-border-color: rgba(0, 0, 0, .33);
 
 body{
 	margin: 0;
@@ -18,6 +21,12 @@ body{
 
 .filler-2{
 	flex: 2;
+}
+
+ad{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
 }
 
 @import "../app/header/styles/styles";

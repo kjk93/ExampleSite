@@ -66,95 +66,123 @@ angular.module('common.services.MatchData', [])
 		function team(userName){
 			if(userName === 'Andrew'){
 				return {
-					'Isola': {
+					'Jim Isola': {
 						points: 12,
 						starting: true
 					},
-					'Cesar': {
+					'Mike Cesar': {
 						points: 14,
 						starting: true
 					},
-					'Wagen': {
+					'Nick Wagen': {
 						points: 16,
 						starting: true
 					},
-					'Davy': {
+					'John Davy': {
 						points: 9,
 						starting: true
 					},
-					'Good': {
+					'Luke Good': {
 						points: 5,
 						starting: true
 					},
-					'Diller': {
+					'James Diller': {
 						points: 8,
 						starting: true
 					},
-					'Grabbe': {
+					'Neil Grabbe': {
 						points: 7,
 						starting: true
 					},
-					'Vela-estrada': {
+					'Kevin Vela-estrada': {
 						points: 10,
 						starting: true
 					},
-					'Oliviero': {
+					'Milton Oliviero': {
 						points: 2,
 						starting: true
 					},
-					'Minton': {
+					'Oliver Minton': {
 						points: 1,
 						starting: true
 					},
-					'Pidone': {
+					'Desmond Pidone': {
 						points: 1,
 						starting: true
 					},
+					'Damien Pratt': {
+						points: 0,
+						starting: false
+					},
+					'Laurel Campos': {
+						points: 0,
+						starting: false
+					},
+					'Abbey Duran': {
+						points: 0,
+						starting: false
+					},
+					'Mireya Frank': {
+						points: 0,
+						starting: false
+					},
+				  'Jerome Hart': {
+						points: 0,
+						starting: false
+					},
+				  'Ruben Oliver': {
+						points: 0,
+						starting: false
+					},
+				  'Cash Sellers': {
+						points: 0,
+						starting: false
+					} 
 				};
 			}
 			else{
 				return {
-					'Tygar': {
+					'Carl Tygar': {
 						points: 12,
 						starting: true
 					},
-					'Jepsen': {
+					'Sam Jepsen': {
 						points: 18,
 						starting: true
 					},
-					'Chou': {
+					'Hank Chou': {
 						points: 10,
 						starting: true
 					},
-					'Maxson': {
+					'Lou Maxson': {
 						points: 20,
 						starting: true
 					},
-					'Amatangelo': {
+					'Matt Amatangelo': {
 						points: 4,
 						starting: true
 					},
-					'Beighlie': {
+					'Hal Beighlie': {
 						points: 4,
 						starting: true
 					},
-					'Jammalamadaka': {
+					'Bob Jammalamadaka': {
 						points: 5,
 						starting: true
 					},
-					'Geribo': {
+					'George Geribo': {
 						points: 7,
 						starting: true
 					},
-					'Wetzel': {
+					'Will Wetzel': {
 						points: 19,
 						starting: true
 					},
-					'Goggin': {
+					'Grant Goggin': {
 						points: 1,
 						starting: true
 					},
-					'Lightman': {
+					'Blake Lightman': {
 						points: 2,
 						starting: true
 					}
