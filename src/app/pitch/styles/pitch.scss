@@ -83,6 +83,11 @@
 		border: solid 1px;
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
+    min-width: 25vw;
+
+    .title{
+    	align-self: center;
+    }
 
 		.formationButton{
 			margin: 1rem 0;
@@ -179,6 +184,22 @@
 
 	.lineUpDirective{
 		flex: 2;
+	}
+
+	ad{
+		flex: 1;
+	}
+}
+
+.newsFeedArea{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	height: 338px;
+	padding: 2rem 3rem;
+
+	news-feed{
+		flex: 2;	
 	}
 
 	ad{

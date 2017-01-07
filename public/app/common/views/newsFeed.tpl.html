@@ -1,9 +1,10 @@
-<div class="newsFeed">
-	<div class="title">The Feed</div>
-	<div class="feed">
+<div class="newsFeed" ng-style="{'height': news.height}">
+	<div class="title">THE FEED</div>
+	<div scrollbar="{'topPadding': '5rem'}" class="feed">
 		<div ng-repeat="item in news.feed" class="feedItem">
 			<div class="header">{{item.title}}</div>
 			<div class="text">{{item.body}}</div>
+			<div class="divider"></div>
 		</div>
 	</div>
 </div>

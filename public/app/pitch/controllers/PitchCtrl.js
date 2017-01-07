@@ -1,9 +1,9 @@
 angular.module('pitch.controllers.PitchCtrl', [])
 	.controller('PitchCtrl', PitchCtrl);
 
-	PitchCtrl.$inject = ['PitchData', 'MatchData'];
+	PitchCtrl.$inject = ['PitchData', 'MatchData', '$interval'];
 
-	function PitchCtrl(PitchData, MatchData){
+	function PitchCtrl(PitchData, MatchData, $interval){
 		var vm = this;
 		var players = MatchData.players();
 

@@ -1,0 +1,13 @@
+.scrollbarParent{
+	position: relative;
+	overflow: hidden;
+}
+
+.scrollbarSib{
+	position: absolute;
+	z-index: 2;
+}
+
+.scrollbarElem{
+	position: absolute;
+}

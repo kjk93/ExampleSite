@@ -84,20 +84,24 @@ gulp.task('server', ['assetsToPublic', 'toPublic', 'style', 'inject', 'sass'], f
     gulp.watch(jsFiles, function(event){
         gulp.watch(jsFiles, ['toPublic', 'style', 'inject']);
         server.notify(event);
+        console.log('Build finished');
     });
 
     gulp.watch(scssFiles, function(event){
         gulp.watch(scssFiles, ['toPublic', 'style', 'inject', 'sass']);
         server.notify(event);
+        console.log('Build finished');
     });
 
     gulp.watch(htmlFiles, function(event){
         gulp.watch(htmlFiles, ['toPublic', 'style', 'inject']);
         server.notify(event);
+        console.log('Build finished');
     });
 
     gulp.watch(assetFiles, function(event){
         gulp.watch(assetFiles, ['assetsToPublic']);
         server.notify(event);
+        console.log('Build finished');
     });
 });

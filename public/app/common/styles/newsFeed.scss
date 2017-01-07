@@ -1,0 +1,37 @@
+.newsFeed{
+	.title{
+		text-align: center;
+		font-size: 2.5rem;
+		font-weight: bold;
+		font-style: italic;
+		padding: 1rem 0; 
+		color: $green;
+	}
+
+	.feedItem{
+		padding-top: 1.5rem;
+		position: relative;
+	}
+
+	.header{
+		font-size: 2rem;
+	}
+
+	.text{
+		font-size: 1.3rem;
+		margin-bottom: 1.5rem;
+	}
+
+	.divider{
+		border-bottom: solid 1px;
+		position: absolute;
+		width: 80%;
+		left: 10%;
+	}
+
+	&>divider{
+		&:nth-last-of-type{
+			border: none;
+		}
+	}
+}
